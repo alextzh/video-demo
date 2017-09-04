@@ -1,0 +1,243 @@
+/*header*/
+.my-header {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #f0f0f0;
+}
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1280px;
+	padding: 0 15px;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.welcome {
+	float: right;
+	margin-right: 15px;
+	color: #666;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.my-login {
+	float: right;
+	padding: 0 15px;
+	color: #333;
+	text-decoration: none;
+}
+/*main*/
+.main-content {
+	background: #fff;
+}
+@media screen and (min-width: 64em) {
+	.main-content {
+	    padding: 2rem 8rem;
+	    margin: 0 auto;
+	    font-size: 1.1rem;
+	}
+}
+@media screen and (max-width: 64em) and (min-width: 42em) {
+	.main-content {
+	    padding: 2rem 2rem;
+	    font-size: 1.1rem;
+	}
+}
+@media screen and (max-width: 42em) {
+	.main-content {
+	    padding: 1rem 1rem 2rem 1rem;
+	    font-size: 1rem;
+	}
+}
+
+.content-box {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0 4rem;
+}
+.content-item {
+	background-color: #fff;
+	padding: 0.8rem;
+    text-align: center;
+    flex: 0 1 100%;
+	margin-bottom: 2rem;
+}
+
+/*表格*/
+.table-box {
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #ddd;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+}
+.table-box th,.table-box td {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.table-box th {
+	font-size: 16px;
+	color: #666;
+}
+.table-box td {
+	font-size: 14px;
+	color: #999;
+}
+.avatar {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.play-btn {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(../img/play.png) no-repeat center center;
+	border-radius: 50%;
+	background-size: cover;
+	vertical-align: middle;
+}
+/*视频*/
+.video-box {
+	width: 300px;
+	height: 150px;
+	background: #000;
+	margin: 0 auto;
+}
+/*弹窗*/
+.layer-wrapper {
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 998;
+    background-color: rgba(0,0,0,.5);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.layer {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.layer-content {
+	padding: 30px;
+	border-radius: 4px;
+	background: #fff;
+}
+.content-title {
+	width: 100%;
+	position: relative;
+	height: 40px;
+}
+.content-title .close {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/close.png') no-repeat center center;
+}
+
+.form-input {
+	width: 500px;
+	margin-bottom: 20px;
+}
+.form-input:last-child {
+	margin-bottom: 0;
+}
+.form-input .label {
+	display: inline-block;
+	width: 28%;
+	height: 40px;
+	line-height: 40px;
+	padding-right: 2%;
+	text-align: right;
+	vertical-align: top;
+}
+.form-input .input {
+	display: inline-block;
+	width: 68%;
+	height: 40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 0 10px;
+	outline: 0 none;
+}
+.form-input .btn {
+	display: block;
+	width: 30%;
+	min-width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	color: #333;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.form-input .btn:hover {
+	color: #999;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+}
+.form-err {
+	font-size: 12px;
+	color: red;
+    margin-left: 166px;
+    display: inline-block;
+}
+/*分页*/
+.page{ 
+	text-align:center;
+	padding:18px 0px 10px 0px;
+	background:#fff;
+}
+.page a{
+	display:inline-block;
+	width:26px;
+	color:#666;
+	font-size:16px;
+	text-align:center;
+    line-height:26px; 
+    border:1px solid #666; 
+    border-radius:4px; 
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.page .jp-previous{
+	width:100px; 
+	height:35px; 
+	line-height:35px;
+}
+.page .jp-next{
+	width:100px; 
+	height:35px; 
+	line-height:35px;
+}
+.page .jp-disabled{
+	border:1px solid #ddd;
+	color:#ddd;
+}
+.page span{
+	display:none;
+}
